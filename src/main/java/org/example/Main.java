@@ -1,15 +1,21 @@
-package org.example;
-
-public class Main {
+class Main {
     public static void main(String[] args) {
-        int age = 50;
-        System.out.println("당신의 나이 : " + age);
+        사람 a사람 = new 사람();
+        a사람.나이 = 10;
+        a사람.a왼팔 = new 팔();
 
-        if (age >= 20) {
-            System.out.println("성인입니다");
-        }
-        if (age < 20) {
-            System.out.println("미성년자 입니다");
-        }
+        System.out.println(a사람.a왼팔.길이 + "cm");
+        // 출력 : 100cm
+    }
+}
+
+class 사람{
+    int 나이;
+    팔 a왼팔;
+}
+class 팔 {
+    int 길이 = 100;
+    팔 (){
+        this.길이 = 100;
     }
 }
